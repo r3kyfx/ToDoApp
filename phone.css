@@ -39,8 +39,13 @@
     }
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 480px) {
     .phone-filters{
         display: none;
+    }
+}
+@media screen and (max-width: 400px) {
+    .ui{
+        width: 200px
     }
 }
