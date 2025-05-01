@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+}
+body{
+    overflow: hidden;
+}
+.container{
+    height: 100dvh;
+    background-image: url("./images/bg-desktop-light.jpg");
+    background-repeat: no-repeat;
+    background-size : contain;
+
+    display: flex;
+    justify-content: center;
+
+    transition: all 1s ease-in-out;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.ui{
+    width: 500px;
+    margin-top: 5%;
+}
+.app{
+    filter: drop-shadow(0px 3px 10px rgb(46, 46, 46));
+}
+
+h1{
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    letter-spacing: 15px;
+    margin-bottom: 5%;
+}
+#themeBtn{
+    width: 27px;
+    height: 27px;
+    background-image: url('./images/icon-moon.svg');
+    background-repeat: no-repeat;
+    transition: all 1s ease-in-out;
+}
+#themeBtn:hover{
+    cursor: pointer;
+}
+.task-list{
+    overflow: auto;
+    border-radius: 5px 5px 0 0 ;
+    max-height: 60dvh;
+    scrollbar-width: thin;
+}
+
+input[type="text"]{
+    border-radius: 5px;
+    border: none;
+    padding: 1vh;
+    width: 100%;
+    margin-bottom: 3vh;
+
+    padding: 2vh;
+
+    outline: none;
+
+    color: #494C6B;
+    transition: all 1s ease-in-out;
+}
+.task {
+    background-color: white;
+    padding: 2vh 2.5vh;
+
+    display: flex;
+    
+    gap: 10px;      
+    
+    font-family:"Josefin Sans", sans-serif;
+    color: #494C6B;
+
+    border-bottom: 2px solid #979797;
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+}
+.task>span{
+    color: #494C6B;
+    transition: color 1s ease-in-out;
+}
+.taskCheckbox{
+    width: 16px;
+    height: 16px;
+    margin: 0;
+
+    appearance: none;
+    border-radius: 50%;
+    border: 2px solid gray;
+
+    transition: background 0.2s ease;
+}
+
+.taskCheckbox:checked {
+    background-color: #6c63ff; 
+    background-image: url(./images//icon-check.svg);
+    border-color: #6c63ff;
+}
+    
+.completed{
+    text-decoration: line-through;
+    color: #D1D2DA;
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+
+    color: #9495A5;
+    font-size: 14px;
+
+    background-color: white;
+    padding: 1.2vh 1vh;
+    border-radius: 0 0 5px 5px;
+    transition: all 1s ease-in-out;
+}
+
+.footer>button,
+.filters>button,
+.phone-footer>button,
+.phone-filters>button{
+    background: none;
+    border: none;
+    color: #9495A5;
+    transition: color .7s ease;
+    cursor: pointer;
+}
+.filters>button,
+.phone-filters>button{
+    font-weight: bold;
+}
+.filters>button:hover,
+.phone-filters>button:hover{
+    color: #6c63ff;
+}
+#clearCompleted,
+#phone-clearCompleted{
+    transition: color .7s ease;
+}
+
+#clearCompleted:hover,
+#phone-clearCompleted:hover{
+    color: #6c63ff;
+}
+.phone-footer{
+    display: none;
+}
+
+
+
